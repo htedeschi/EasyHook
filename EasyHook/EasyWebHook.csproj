@@ -16,11 +16,8 @@
     <RepositoryUrl>https://github.com/htedeschi/EasyHook</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>Webhook Web Hook EasyHook Easy Hook Trigger Event NuGet</PackageTags>
+    <NeutralLanguage>EasyWebHook</NeutralLanguage>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -32,6 +29,10 @@
       <PackagePath></PackagePath>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
 </Project>

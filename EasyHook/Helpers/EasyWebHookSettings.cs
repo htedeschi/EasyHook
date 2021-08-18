@@ -3,7 +3,7 @@ using System.Net.Http;
 
 namespace Easy.Hook.Helpers
 {
-    public class EasyHookSettings
+    public class EasyWebHookSettings
     {
         public Uri UriWebhook { get; set; }
         public HttpClient HttpClient { get; set; }      

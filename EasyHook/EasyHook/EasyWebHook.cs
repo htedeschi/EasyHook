@@ -2,10 +2,10 @@
 
 namespace Easy.Hook
 {
-    public class EasyHook<T>
+    public class EasyWebHook<T>
     {
         public WebHook<T> WebHook { get; set; }
-        public EasyHook(EasyHookSettings settings)
+        public EasyWebHook(EasyWebHookSettings settings)
         {
             Requests<T> request = new Requests<T>(settings);
             

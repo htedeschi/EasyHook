@@ -4,14 +4,14 @@ using System.Net.Http;
 
 namespace Easy.Hook.Models
 {
-    public class EasyHookResponse
+    public class EasyWebHookResponse
     {
         public bool Success { get; private set; }
         public JObject Content { get; set; }
         public HttpResponseMessage HttpResponseMessage { get; private set; }
         public DateTime ResponseDateTime { get; private set; }
 
-        public EasyHookResponse()
+        public EasyWebHookResponse()
         {
             Success = false;
             Content = null;
@@ -19,7 +19,7 @@ namespace Easy.Hook.Models
             ResponseDateTime = DateTime.Now;
         }
 
-        public EasyHookResponse(HttpResponseMessage httpResponseMessage, JObject content)
+        public EasyWebHookResponse(HttpResponseMessage httpResponseMessage, JObject content)
         {
             Success = httpResponseMessage.IsSuccessStatusCode;
             Content = content;

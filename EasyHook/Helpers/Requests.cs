@@ -8,14 +8,14 @@ namespace Easy.Hook.Helpers
 {
     public class Requests<T>
     {
-        public EasyHookSettings _settings { get; set; }
+        public EasyWebHookSettings _settings { get; set; }
 
-        public Requests(EasyHookSettings settings)
+        public Requests(EasyWebHookSettings settings)
         {
             _settings = settings;
         }
 
-        public async Task<EasyHookResponse> PostRequest(T item)
+        public async Task<EasyWebHookResponse> PostRequest(T item)
         {
             ByteArrayContent byteContent = null;
 
@@ -33,7 +33,7 @@ namespace Easy.Hook.Helpers
 
                 JObject dynamicContent = JObject.Parse(content);
 
-                EasyHookResponse easyHookResponse = new EasyHookResponse(response, dynamicContent);
+                EasyWebHookResponse easyHookResponse = new EasyWebHookResponse(response, dynamicContent);
 
                 return easyHookResponse;
             }

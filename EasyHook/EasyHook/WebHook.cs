@@ -13,7 +13,7 @@ namespace Easy.Hook
             _requests = requests;
         }
 
-        public async Task<EasyHookResponse> Send(T item)
+        public async Task<EasyWebHookResponse> Send(T item)
         {
             return await _requests.PostRequest(item);
         }
