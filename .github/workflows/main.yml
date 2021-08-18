@@ -28,3 +28,5 @@ jobs:
       # Runs the script from marketplace
       - name: Publish NuGet
         uses: brandedoutcast/publish-nuget@v2.5.5
+        with:
+          PROJECT_FILE_PATH: EasyHook/EasyWebHook.csproj
