@@ -17,6 +17,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>Webhook Web Hook EasyHook Easy Hook Trigger Event NuGet</PackageTags>
     <NeutralLanguage>EasyWebHook</NeutralLanguage>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
