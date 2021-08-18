@@ -3,10 +3,35 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <langversion>8</langversion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIcon>hook.png</PackageIcon>
+    <PackageReleaseNotes>- Created project
+- Working only with POST requests
+- Added details to NuGet Package descriptions</PackageReleaseNotes>
+    <Authors>Henrique Tedeschi</Authors>
+    <Company />
+    <Description>A NuGet Package to implement webhooks seamlessly into any .NET project.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/htedeschi/EasyHook</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/htedeschi/EasyHook</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>Webhook Web Hook EasyHook Easy Hook Trigger Event NuGet</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources\hook.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

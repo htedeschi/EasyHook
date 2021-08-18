@@ -16,7 +16,6 @@ namespace Easy.Hook
         public async Task<EasyHookResponse> Send(T item)
         {
             return await _requests.PostRequest(item);
-
         }
     }
 }
